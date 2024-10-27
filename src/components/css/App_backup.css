@@ -3,7 +3,7 @@ body {
     /*background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;*/
-    background-color: #111;
+    background-color: #fff;
     font-family: "Montserrat";
 }
 
@@ -38,7 +38,7 @@ waves effect: use 3 divs as follows in background.js:
 
 */
 
-/* SHIFTING LINES EFFECT
+/* SHIFTING LINES EFFECT */
 .background {
     animation:slide 40s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, #3C5A14 50%, #669D31 50%);
@@ -67,7 +67,7 @@ waves effect: use 3 divs as follows in background.js:
     100% {
       transform:translateX(25%);
     }
-  } */
+  }
 
 
 

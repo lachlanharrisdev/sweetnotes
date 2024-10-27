@@ -1,0 +1,7 @@
+.sidebar__container {
+    width: 75px;
+    background-color: rgb(255,0,0);
+    height: 100%;
+    position: -webkit-sticky;
+    position: absolute sticky;
+}

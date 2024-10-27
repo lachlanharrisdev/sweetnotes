@@ -17,9 +17,7 @@
     max-width: 1500px; /* 350px : 1500px */
     margin: 0 auto;
     padding: 0;
-    flex-grow: 1;
     transform: translateY(80px);
-    margin-left: 75px;
   }
 
   .note {
@@ -56,32 +54,20 @@
   .note__image {
     object-fit: cover;
     object-position: center;
-    background: rgba(255,255,255,0.04);
+    background: rgba(255,255,255,0.03);
     animation-duration: 150ms;
     animation-timing-function: ease-in-out;
   }
 
-  .note:nth-child(3n) .note__image {
-    background: rgba(80, 255, 80, 0.12);
-  }
-  .note:nth-child(3n-1) .note__image {
-    background: rgba(40, 160, 40, 0.12);
-  }
-
-  .note::before {
+  /*.note__wrap::::::::::::::::before {
     transform: scale(0.95);
     background: linear-gradient(145deg, rgba(20, 20, 22, 0.01) 0%, rgba(25, 25, 28, 0.07) 100%);
     backdrop-filter: blur(45px);
-  }
-
-  .note:nth-child(3n):before {
-    background: linear-gradient(145deg, rgba(20, 80, 18, 0.03) 0%, rgba(25, 25, 28, 0.21) 100%);
-  }
+  }*/
 
   .note__body {
     white-space: pre-wrap;
     height: 100%;
-    min-height: 12rem;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -92,7 +78,7 @@
     -webkit-hyphens: auto;
     hyphens: auto;
     word-break: break-word;
-    color: #fff;
+    color: #ccc;
     font-size: 1em;
     transition: opacity 350ms;
   }
@@ -100,12 +86,8 @@
     font-weight: 300;
     margin-top: 0.25em;
   }
-  .note::before,
-  .note::after {
-    content: '';
-  }
-  .note::before,
-  .note::after,
+
+
   .note__image {
     top: -50%;
     left: 0;
@@ -116,10 +98,12 @@
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     z-index: -1;
+    background-color: #aaa;
   }
 
+
   .note__title {
-    color: #fff;
+    color: #111;
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 1.75em;
@@ -139,11 +123,11 @@
 
   .note__footer_left {
     color: rgba(233, 233, 235, 0.5);
-    transform: rotate(30deg) translateX(-25%) translateY(100%);
+    transform: rotate(30deg) translateX(-33%) translateY(70%);
   }
   .note__footer_right {
     color: rgba(233, 233, 235, 0.5);
-    transform: rotate(-30deg) translateX(25%) translateY(100%);
+    transform: rotate(-30deg) translateX(33%) translateY(75%);
   }
 
 /* NOTE FORM */
@@ -156,7 +140,7 @@
   font-size: 1em;
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: #111;
   text-align: center;
   outline: none;
 }
@@ -165,7 +149,7 @@
   background: transparent;
   border: none;
   outline: none;
-  color: #fff;
+  color: #111;
 }
 
 /* HOVER ANIMATION */
@@ -205,7 +189,7 @@
 
 @media (min-width: 550px) and (max-width: 1150px) 
 {
-  .note:nth-child(3n) 
+  .note__wrapnth-child(3n) 
   {
     margin-right: calc(50% - 175px);
     margin-left: calc(50% - 175px);
@@ -220,12 +204,12 @@
 
 @media (min-width: 1000px) and (max-width: 1550px) {
  
-  .note:nth-child(5n + 4) 
+  .note__wrapnth-child(5n + 4) 
   {
     margin-left: calc(50% - 375px);
   }
 
-  .note:nth-child(5n + 5) 
+  .note__wrapnth-child(5n + 5) 
   {
     margin-right: calc(50% - 375px);
   }
@@ -238,12 +222,12 @@
 }
 @media (min-width: 1550px) 
 {
-  .note:nth-child(7n + 5) {
+  .note__wrapnth-child(7n + 5) {
     margin-left: calc(50% - 666px);
   }
 
-  .note:nth-child(7n + 7), 
-  .note:nth-child(7n + 5):nth-last-child(2) 
+  .note__wrapnth-child(7n + 7), 
+  .note__wrapnth-child(7n + 5):nth-last-child(2) 
   {
     margin-right: calc(50% - 665px);
   }
@@ -282,7 +266,7 @@
 
 @media (min-width: 500px) and (max-width: 1475px) 
 {
-  .note:nth-child(3n) 
+  .note__wrap:nth-child(3n) 
   {
     margin-right: calc(50% - 250px);
     margin-left: calc(50% - 250px);
@@ -297,12 +281,12 @@
 
 @media (min-width: 1475px){
  
-  .note:nth-child(5n + 4) 
+  .note__wrap:nth-child(5n + 4)
   {
     margin-left: calc(50% - 510px);
   }
 
-  .note:nth-child(5n + 5) 
+  .note__wrap:nth-child(5n + 5) 
   {
     margin-right: calc(50% - 510px);
   }

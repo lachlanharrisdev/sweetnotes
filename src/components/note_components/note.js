@@ -3,6 +3,7 @@ import React from "react";
 function Note({ id, text, date, deleteNote, editNote}) {
   return (
     <li className="note">
+      <div class="note__wrap">
       
       <div class="note__image"/>
       <div class="note__body">{text}</div>
@@ -13,6 +14,7 @@ function Note({ id, text, date, deleteNote, editNote}) {
       </div>
       <div class="note__footer_right">
         <div class="note__date">{date}</div>
+      </div>
       </div>
       </div>
     </li>

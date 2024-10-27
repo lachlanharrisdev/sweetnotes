@@ -1,6 +1,7 @@
 import { React, useState, useEffect } from "react";
 import { v4 as uuid } from "uuid";
 import "../css/note.css";
+//import "../css/note_alternative.css";
 import Note from "./note"
 import HiddenNote from "./hidden_note";
 import NoteForm from "./note_form";
@@ -45,7 +46,7 @@ const deleteNote = (id) => {
 
 useEffect(() => {
   const data = JSON.parse(localStorage.getItem("Notes"));
-  if (data) {
+  if (data && data.length > 0) {
     setNotes(data);
   }
 }, []);
