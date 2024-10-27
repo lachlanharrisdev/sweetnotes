@@ -74,6 +74,7 @@ useEffect(() => {
         saveHandler={saveHandler}
         inputText={inputText}
       />
+      <HiddenNote/><HiddenNote/>
     </ul>
   );
 }

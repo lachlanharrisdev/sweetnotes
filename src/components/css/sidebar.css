@@ -1,7 +1,33 @@
-.sidebar__container {
-    width: 75px;
-    background-color: rgb(255,0,0);
-    height: 100%;
-    position: -webkit-sticky;
-    position: absolute sticky;
-}
+.sidebar {
+    position: fixed; /* Sidebar stays fixed in place */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Sidebar spans the full height */
+  width: 60px; /* Sidebar width */
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center icon list vertically */
+  }
+  
+  .icon__container {
+    font-size: 24px;
+    color: #bbb; /* Default color */
+    margin: 20px 0;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .icon__container:hover {
+    color: #0080ff; /* Hover color */
+  }
+  
+  /* Layout for main app content */
+  .app {
+    display: flex;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }

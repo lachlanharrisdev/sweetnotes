@@ -19,10 +19,9 @@
     padding: 0;
     flex-grow: 1;
     transform: translateY(80px);
-    margin-left: 75px;
   }
 
-  .note {
+  .note, .note_hidden {
     /* honeycomb alignment */
     /* 350px */
     /*
@@ -258,7 +257,7 @@
 */
 
 /* 450px */
-@media (max-width: 775px) 
+@media (max-width: 828px) 
 {
   .note {
     flex: 0 1 300px;
@@ -267,9 +266,12 @@
     margin: 65.4px 12.5px 25px;
     font-size: .85em
 }
+  .note__body {
+    min-height: 8rem;
+  }
 }
 
-@media (min-width: 775px) and (max-width: 975px){
+@media (min-width: 828px) and (max-width: 1026px){
     .note {
         flex: 0 1 350px;
         max-width: 350px;
@@ -280,7 +282,7 @@
 }
 
 
-@media (min-width: 500px) and (max-width: 1475px) 
+@media (min-width: 500px) and (max-width: 1505px) 
 {
   .note:nth-child(3n) 
   {
@@ -295,7 +297,7 @@
 }
 
 
-@media (min-width: 1475px){
+@media (min-width: 1505px){
  
   .note:nth-child(5n + 4) 
   {
